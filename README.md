@@ -7,11 +7,13 @@ This is the final version of a Front End Web Developer portfolio.
 * [Installation](#installation) 
 * [Usage](#usage) 
 * [Contribution](#contribution)  
-* [Questions?](#questions)
+* [Questions](#questions)
 ## Installation 
 
 ## Usage 
 
 ## Contribution 
 
-## Questions?
+## Questions
+
+If you have any questions please don't hesitate to email me at kristianwilley@gmail.com 
