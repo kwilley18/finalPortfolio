@@ -14,8 +14,8 @@
           <a class="navbar-brand" href="#">
             <img src="logo2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" onclick="bar()" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
           </button>
           <!--i class="bi bi-github"></i-->
           <div class="collapse navbar-collapse navbar-expand-lg" id="navbarNav">
@@ -24,7 +24,7 @@
                       <a class="nav-link active" aria-current="page" href="#">Work</a>
                    </li>
                    <li class="nav-item px-5">
-                       <a class="nav-link" href="#">About</a>
+                       <a class="nav-link" href="about.html">About</a>
                    </li>
                    <li class="nav-item px-5">
                         <a class="nav-link" href="#">Wip</a>
@@ -35,7 +35,18 @@
               </ul>
           </div>
         </div>
+        <script>
+          function bar(){
+            var link = document.getElementById("navbarNav"); 
+            if(link.style.display === "block"){
+              link.style.display = 'none'; 
+            }
+            else{
+              link.style.display = "block"; 
+            }
+          }
 
+        </script>
       </nav>
       <!--div class="row">
         <div class="col-xs-6"> </div>
