@@ -29,10 +29,12 @@ p{
 
 }
 
+
 .responsive {
     max-width: 90%;
     height: auto;
-  }
+}
+
 a{
     text-decoration: none;
 }
