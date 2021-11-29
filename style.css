@@ -37,6 +37,7 @@ p{
 
 a{
     text-decoration: none;
+    color: black; 
 }
 .rotate {
     animation: rotation 10s;
