@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("bryan-goff-f7YQo-eYHdM-unsplash.jpg"); 
+    background-image: url("bryan-goff-f7YQo-eYHdM-unsplash.jpg") no-repeat center center; 
     background-repeat: no-repeat; 
     background-position: center;
     background-attachment: fixed;       
