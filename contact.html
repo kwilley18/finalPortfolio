@@ -99,7 +99,23 @@
               emailjs.init('user_3nnuQyoLxoubE33cdbx30');
           })();
         </script>
-        <form class="responsive">
+        <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+        <form class="responsive" id="contat-form">
         <div class="row">
           <div class="form-group col-sm-6">
               <input type="name"  class="form-control m-3" name="name" placeholder="name"></input>
