@@ -117,17 +117,29 @@
             });
         }
     </script>
+                 <!--form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send>
+    </form--->
         <form class="responsive" id="contact-form">
+                        <input type="hidden" name="contact_number">
+
         <div class="row">
           <div class="form-group col-sm-6">
-              <input type="name"  class="form-control m-3" name="name" placeholder="name"></input>
-              <input type="email" class="form-control m-3 " name="email" placeholder="email address">
+              <input type="name"  class="form-control m-3" name="user_name" placeholder="name"></input>
+              <input type="email" class="form-control m-3 " name="user_email" placeholder="email address">
 
               </input>
           </div>
           <div class="form-group text-center col-sm-6">
               <textarea class="form-control m-3" type="message"name="message" rows="3" placeholder="send me a message!"></textarea>
-              <button class="btn btn-light m-3"type="submit" value="Send">Send</button>
+              <button class="btn btn-light m-3"type="submit" ><input type="submit" value="Send">Send</button>
           </div>
           </div>
 </form>
