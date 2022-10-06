@@ -12,6 +12,33 @@
 </script>
 
 <html>
+                <head>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+   
+        <script type="text/javascript">
+          (function(){
+              emailjs.init('eQz_BwLrXgAN-dC0M');
+          })();
+        </script>
+        <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+                </head>
+        <body>
     <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -93,30 +120,7 @@
             
         </div>
         <div class="contact container p-5 rounded my-5 responsive col-sm-8">
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-   
-        <script type="text/javascript">
-          (function(){
-              emailjs.init('eQz_BwLrXgAN-dC0M');
-          })();
-        </script>
-        <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
                  <!--form id="contact-form">
         <input type="hidden" name="contact_number">
         <label>Name</label>
@@ -169,4 +173,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+</body>
 </html>
