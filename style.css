@@ -1,11 +1,12 @@
 
 body{
-    background-image: url("bryan-goff-f7YQo-eYHdM-unsplash.jpg"); 
+    background: url("bryan-goff-f7YQo-eYHdM-unsplash.jpg"); 
     background-repeat: no-repeat; 
-   background-position: center;
-    background-attachment: fixed;
+   background-position: center center;
+   
      background-size: cover; 
    /*webkit-background-size: cover;
+     background-attachment: fixed;
     -moz-background-size: cover;
     -o-background-size: cover;
    
@@ -14,7 +15,10 @@ body{
     -o-attachment: fixed;   
    height:auto;
     max-width:100%;*/ 
+    width: 100vw;
+height: 100vh;
 }
+
 
 h1{
     font-family: 'Jura', cursive;
