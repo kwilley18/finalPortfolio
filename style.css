@@ -3,11 +3,12 @@ body{
     background-image: url("bryan-goff-f7YQo-eYHdM-unsplash.jpg"); 
     background-repeat: no-repeat; 
    background-position: center;
-    background-attachment: fixed;        
+    background-attachment: fixed;
+     background-size: cover; 
    /*webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+   
    webkit-attachment: fixed;  
     -moz-attachment: fixed;  
     -o-attachment: fixed;   
