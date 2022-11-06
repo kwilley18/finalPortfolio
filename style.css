@@ -77,32 +77,7 @@ a{
       transform: rotate(-90deg);
     }*/ 
 }
-div.scrollmenu {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-  }
-  
-  div.scrollmenu img {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-  
-  div.scrollmenu img:hover {
-    background-color: #777;
-  }
-  
-* {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
 
 /* Hide the images by default */
 .mySlides {
