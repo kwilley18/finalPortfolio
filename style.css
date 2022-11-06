@@ -83,7 +83,7 @@ div.scrollmenu {
     white-space: nowrap;
   }
   
-  div.scrollmenu a {
+  div.scrollmenu img {
     display: inline-block;
     color: white;
     text-align: center;
@@ -91,7 +91,7 @@ div.scrollmenu {
     text-decoration: none;
   }
   
-  div.scrollmenu a:hover {
+  div.scrollmenu img:hover {
     background-color: #777;
   }
   
